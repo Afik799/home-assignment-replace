@@ -1,0 +1,9 @@
+{
+    "_awsStackName_": "financeProdStack",
+    "_memorySize_": "10MB",
+    "_lambdaRole_": "financeProdRole",
+    "_handler_": "lambda_function.lambda_handler",
+    "_runtime_": "nodejs12.x",
+    "_buildMethod_": "nodejs12.x",
+    "_route53Url_": "address with spaces"
+}
