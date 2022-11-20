@@ -1,0 +1,8 @@
+{
+    "_awsStackName_": "integrationDevStack",
+    "_memorySize_": "1MB",
+    "_lambdaRole_": "integrationDevRole",
+    "_handler_": "lambda_function.lambda_handler",
+    "_runtime_": "python3.9",
+    "_buildMethod_": "python3.9"
+}
