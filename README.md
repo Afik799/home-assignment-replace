@@ -1,14 +1,16 @@
-# home-assignment-replace
-Home assignment to find and replace strings
-## Task:
-Two departments have lambda functions they need to deploy to AWS.
-Each department has an AWS account, and three environments for each account
-Write code to create a new AWS template file, based the input parameters in each json file
-The input parameters for the script should be:
-1. department name
-2. target environment
-For example, the command:
-script --department integration --environment dev
+# home-assignment-replace <BR>
+Home assignment to find and replace strings <BR>
+## Task: <BR>
+Two departments have lambda functions they need to deploy to AWS. <BR>
+Each department has an AWS account, and three environments for each account <BR>
+Write code to create a new AWS template file, based the input parameters in each json file <BR>
+The input parameters for the script should be: <BR>
+1. department name <BR>
+2. target environment <BR>
+    
+For example, the command: <BR>
+` script --department integration --environment dev `
+    
 Will change this part in template.yaml file:
 ```
     Properties:
@@ -34,4 +36,4 @@ to create the following output:
       BuildMethod: python3.9
 ```
 ## Bonus points:
-1. escape whitespace in awsStackName parameter
+1. escape whitespace in route53Url parameter
