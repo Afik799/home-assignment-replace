@@ -1,20 +1,18 @@
 AWSTemplateFormatVersion: '2010-09-09'
 Transform: AWS::Serverless-2016-10-31
 Description: >
-
   Created from SAM Template 
-  
+
 Resources:
   Lambda:
     Type: AWS::Serverless::Function #   More info about Function Resource: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#awsserverlessfunction
     Properties:
-      FunctionName: ${_awsStackName_}
-      CodeUri: .
-      MemorySize: ${_memorySize_}
-      Role: ${_lambdaRole_}
-      Handler: ${_handler_}
-      Runtime: ${_runtime_}
+      FunctionName: {{ givenValues._awsStackName_ }}
+      CodeUri: {{ givenValues.CodeUri | default('.') }}
+      MemorySize: {{ givenValues._memorySize_ }}
+      Role: {{ givenValues._lambdaRole_ }}
+      Handler: {{ givenValues._handler_ }}
+      Runtime: {{ givenValues._runtime_ }}
     Metadata:
-      BuildMethod: ${_buildMethod_}
-      route53Url: ${_route53Url_}
-
+      BuildMethod: {{ givenValues._buildMethod_ }}
+      route53Url: {{ givenValues._route53Url_ }}
